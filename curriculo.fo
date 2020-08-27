@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+    
+    <fo:layout-master-set>
+        <fo:simple-page-master master-name="sample" page-width="210mm" page-height="297mm" > <!-- margin="10mm" -->
+            
+            <fo:region-body margin-left="7cm" margin-top="3cm" margin-right="10mm"/>
+            
+            <fo:region-before extent="3cm" />   <!--background-color="red"  -->        
+            
+            <fo:region-start extent="7cm" /> <!--background-color="green" -->
+            
+            <fo:region-end extent="10mm" reference-orientation="-90" />
+            
+        </fo:simple-page-master>
+    </fo:layout-master-set>
+    
+    <fo:page-sequence master-reference="sample">
+        
+        <fo:static-content flow-name="xsl-region-before">
+            <fo:block text-align="center" margin-top="1.5cm" font-family="Helvetica" font-weight="900" font-size="20pt"
+                color="#0000C0" >
+                Ricardo Baptistini Kumagae
+            </fo:block >            
+        </fo:static-content>      
+               
+        
+        <fo:static-content flow-name="xsl-region-start">
+           
+            <fo:block text-align="center" margin-bottom="20mm" >
+                <fo:external-graphic src="img/redondo1.jpg" content-height="60mm" content-width="60mm" />
+            </fo:block>
+            
+            <fo:block margin-right="2mm" margin-left="10mm" text-align="left" color="#0000C0">
+                
+                <fo:block color="#C00000" font-weight="bold" border-bottom="groove #C00000" border-width="3pt" text-align="right"
+                            margin-bottom="5mm">
+                     CONTATO
+                </fo:block>         
+            
+                <fo:block margin-bottom="5mm">
+                    <fo:external-graphic src="img/whatsapp.png" content-height="5mm" content-width="5mm"  baseline-shift="-3pt"/>
+                    <fo:inline>19-99659 2800</fo:inline>
+                </fo:block>
+                   
+                <fo:block margin-bottom="5mm">
+                    <fo:external-graphic src="img/email.png" content-height="5mm" content-width="5mm"  baseline-shift="-3pt"/>
+                    <fo:inline>ric_bap@hotmail.com</fo:inline>
+                </fo:block>              
+                
+                <fo:block margin-left="5mm" margin-bottom="8mm">                      
+                    <fo:inline space-end="5mm">
+                        <fo:basic-link external-destination="url('https://www.facebook.com/ricbap365')" color="blue">
+                            <fo:external-graphic src="img/facebook.png" content-height="10mm" content-width="10mm" />
+                        </fo:basic-link>
+                    </fo:inline>
+                    
+                    <fo:inline space-end="5mm">
+                        <fo:basic-link external-destination="url('https://www.linkedin.com/in/ricardo-b-kumagae-ba39ab176/')" color="blue">
+                            <fo:external-graphic src="img/linkedin.png" content-height="10mm" content-width="10mm"  />
+                        </fo:basic-link>
+                    </fo:inline>
+                   
+                    <fo:inline>
+                        <fo:basic-link external-destination="url('https://www.instagram.com/ricbap/?hl=pt-br/')" color="blue">
+                            <fo:external-graphic src="img/instagram.png" content-height="10mm" content-width="10mm"  />
+                        </fo:basic-link>
+                    </fo:inline>                     
+                </fo:block>
+                
+                <fo:block color="#C00000" font-weight="bold" border-bottom="groove #C00000" border-width="3pt" text-align="right"
+                    margin-bottom="5mm">
+                    LOCALIZAÇÃO
+                </fo:block> 
+                
+                <fo:block text-align="center" >
+                    <fo:external-graphic src="img/pin.png" content-height="5mm" content-width="5mm" />                    
+                </fo:block>
+                <fo:block text-align="center">Rua Itapecerica da Serra, 530</fo:block>
+                <fo:block text-align="center">Cidade Jardim</fo:block>
+                <fo:block text-align="center">Campinas - SP</fo:block>
+                <fo:block text-align="center" margin-bottom="8mm">13050-410</fo:block>
+                
+                <fo:block color="#C00000" font-weight="bold" border-bottom="groove #C00000" border-width="3pt" text-align="right"
+                    margin-bottom="5mm">
+                    INFORMAÇÕES
+                </fo:block> 
+                
+                <fo:block margin-bottom="2mm">
+                    <fo:inline color="#C00000">Data Nascimento </fo:inline>
+                    28/04/1976
+                </fo:block>
+                <fo:block margin-bottom="2mm">
+                    <fo:inline color="#C00000">Idade </fo:inline>
+                    44 anos
+                </fo:block>
+                <fo:block margin-bottom="2mm">
+                    <fo:inline color="#C00000">Estado Civil </fo:inline>
+                    Solteiro
+                </fo:block>
+                <fo:block margin-bottom="2mm">
+                    <fo:inline color="#C00000">Habilitação </fo:inline>
+                    Sim
+                </fo:block>
+                <fo:block margin-bottom="8mm">
+                    <fo:inline color="#C00000">Categoria </fo:inline>
+                    B
+                </fo:block>
+                
+                <fo:block color="#C00000" font-weight="bold" border-bottom="groove #C00000" border-width="3pt" text-align="right"
+                    margin-bottom="5mm">
+                    IDIOMA
+                </fo:block>
+                <fo:block margin-bottom="2mm">
+                    <fo:inline color="#C00000">Portugues </fo:inline>
+                    Nativo
+                </fo:block>
+                <fo:block>
+                    <fo:inline color="#C00000">Inglês </fo:inline>
+                    Básico
+                </fo:block>
+                <fo:block margin-bottom="2mm">
+                    <fo:inline color="#C00000">Leitura </fo:inline>
+                    Sim
+                    <fo:inline color="#C00000">Fala </fo:inline>
+                    Não
+                </fo:block>
+                
+                <fo:block>
+                    <fo:inline color="#C00000">Japonês </fo:inline>
+                    Básico
+                </fo:block>
+                <fo:block>
+                    <fo:inline color="#C00000">Leitura </fo:inline>
+                    Não
+                    <fo:inline color="#C00000">Fala </fo:inline>
+                    Sim
+                </fo:block>     
+            
+            </fo:block>
+            
+        </fo:static-content>
+        
+        <fo:static-content flow-name="xsl-region-end">
+            <fo:block font-family="Helvetica" font-size="14pt" text-align="left" font-style="italic" margin-top="2mm" margin-left="2cm"
+                letter-spacing = "3pt" color="#b5b5b3">
+                CURRICULUM VITAE CURRICULUM VITAE CURRICULUM VITAE CURRICULUM VITAE
+            </fo:block>
+        </fo:static-content>
+        
+        <fo:flow flow-name="xsl-region-body" >
+            
+            <fo:block margin-left="2mm" margin-top="5mm">
+            
+                <fo:block color="#C00000" font-weight="bold" border-bottom="groove #C00000" border-width="3pt" text-align="left"
+                    margin-bottom="5mm">
+                    OBJETIVOS
+                </fo:block>                
+                <fo:block text-align="center" margin-bottom="7mm" color="#0000C0">DESENVOLVEDOR JAVA</fo:block>
+                
+                <fo:block color="#C00000" font-weight="bold" border-bottom="groove #C00000" border-width="3pt" text-align="left"
+                    margin-bottom="5mm">
+                    FORMAÇÃO
+                </fo:block>
+                
+                <fo:block color="#0000C0">
+                    <fo:inline color="#C00000">Curso: </fo:inline>Superior em Análise e Desenvolvimento de Sistemas
+                </fo:block>
+                <fo:block color="#0000C0" margin-bottom="2mm">
+                    <fo:inline color="#C00000">Instituição: </fo:inline>Instituição Anhanguera
+                    <fo:inline color="#C00000">Ano: </fo:inline>2016 - 2019
+                </fo:block>
+                
+                <fo:block color="#0000C0">
+                    <fo:inline color="#C00000">Curso: </fo:inline>Elétrica Automotiva
+                </fo:block>
+                <fo:block color="#0000C0" margin-bottom="7mm">
+                    <fo:inline color="#C00000">Instituição: </fo:inline>Escola Profissionalizante Vicentini
+                    <fo:inline color="#C00000">Ano: </fo:inline>2015
+                </fo:block>
+                
+                <fo:block color="#C00000" font-weight="bold" border-bottom="groove #C00000" border-width="3pt" text-align="left"
+                    margin-bottom="5mm">
+                    SOBRE MIM
+                </fo:block>
+                <fo:block margin-bottom="7mm" text-align="justify" color="#0000C0"  text-indent="0.5in">
+                    Sou um profissional bastante comprometido, tenho
+                    facilidade em aprender, muito educado e trabalho em
+                    equipe tranquilamente. Tive oportunidade de trabalhar em
+                    grandes fábricas no Japão que me proporcionou uma
+                    melhor compreensão de seus costumes, cultura, geografia,
+                    clima, assim como viver em ambiente multicultural,
+                    disciplina com horários e normas técnicas de segurança e
+                    produtividade.
+                </fo:block>
+                
+                <fo:block color="#C00000" font-weight="bold" border-bottom="groove #C00000" border-width="3pt" text-align="left"
+                    margin-bottom="5mm">
+                    EXPERIÊNCIA PROFISSIONAL ANTERIOR
+                </fo:block>                
+                
+                <fo:block color="#0000C0" >
+                    <fo:inline color="#C00000">Empresa: </fo:inline>Indigo Parking
+                    <fo:inline color="#C00000">Período: </fo:inline>01/02/2017 até 01/11/2017
+                </fo:block>
+                <fo:block color="#0000C0" margin-bottom="2mm">
+                    <fo:inline color="#C00000">Cargo: </fo:inline>Operador de pátio
+                </fo:block>
+                
+                <fo:block color="#0000C0">
+                    <fo:inline color="#C00000">Empresa: </fo:inline>Eletrogás
+                    <fo:inline color="#C00000">Período: </fo:inline>01/2015 até 03/2015
+                </fo:block >
+                <fo:block color="#0000C0" margin-bottom="2mm" >
+                    <fo:inline color="#C00000">Cargo: </fo:inline>Operador de produção
+                </fo:block>
+                
+                <fo:block color="#0000C0" >
+                    <fo:inline color="#C00000">Empresa: </fo:inline>Multipark Estacionamentos
+                    <fo:inline color="#C00000">Período: </fo:inline>09/2014 até 12/2014
+                </fo:block>
+                <fo:block color="#0000C0" margin-bottom="7mm">
+                    <fo:inline color="#C00000">Cargo: </fo:inline>Orientador de pátio
+                </fo:block>
+                
+                <fo:block color="#C00000" font-weight="bold" border-bottom="groove #C00000" border-width="3pt" text-align="left"
+                    margin-bottom="5mm">
+                    EXPERIÊNCIA PROFISSIONAL NO EXTERIOR
+                </fo:block> 
+                
+                <fo:block color="#0000C0" >
+                    <fo:inline color="#C00000">Empresa: </fo:inline>Suzuki
+                    <fo:inline color="#C00000">Período: </fo:inline>08/2013 até 08/2014
+                </fo:block>
+                <fo:block color="#0000C0" margin-bottom="2mm">
+                    <fo:inline color="#C00000">Cargo: </fo:inline>Montagem de automóveis.
+                </fo:block>
+                
+                <fo:block color="#0000C0" >
+                    <fo:inline color="#C00000">Empresa: </fo:inline>Toyota
+                    <fo:inline color="#C00000">Período: </fo:inline>02/2012 até 12/2012
+                </fo:block>
+                <fo:block color="#0000C0" margin-bottom="7mm">
+                    <fo:inline color="#C00000">Cargo: </fo:inline>Montagem de bancos de automóveis.
+                </fo:block>              
+                
+                
+                <fo:block color="#C00000" font-weight="bold" border-bottom="groove #C00000" border-width="3pt" text-align="left"
+                    margin-bottom="5mm">
+                    CONHECIMENTOS ESPECÍFICOS
+                </fo:block>
+                <fo:list-block space-before="2pt" space-after="2pt" space-after.optimum="1pt" font="10pt Courier" text-align="center">
+                    <fo:list-item>                    
+                        <fo:list-item-label end-indent="3.0in">                        
+                            <fo:block border="thin solid #0000C0" background-color="#0000C0"  padding="1.0pt 0"> <!--background-color="#E0E0FF" -->                         
+                                <fo:block text-align="center" >                                
+                                    <!-- fo:leader leader-pattern="use-content" font="14pt ZapfDingbats" color="white">&#10033;</fo:leader -->  
+                                    <fo:inline font="12pt ZapfDingbats" color="black">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="black">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="black">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="black">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>                               
+                                </fo:block>                             
+                            </fo:block>                        
+                        </fo:list-item-label>                    
+                        
+                        <fo:list-item-body start-indent="2.12in">                        
+                            <fo:block border="thin solid #C00000" background-color="#C00000" padding="3pt 0">  <!--background-color="#FFE0E0"-->                            
+                                <fo:block color="white" text-align="left" margin-left="2mm" font-family="Helvetica" font-weight="bold">Java - Spring Framework / JSF 2.3</fo:block>                            
+                            </fo:block> 
+                        </fo:list-item-body>                    
+                    </fo:list-item>
+                </fo:list-block>
+                
+                <fo:list-block space-before="2pt" space-after="2pt" space-after.optimum="1pt" font="10pt Courier" text-align="center">
+                    <fo:list-item>                    
+                        <fo:list-item-label end-indent="3.0in">                        
+                            <fo:block border="thin solid #0000C0" background-color="#0000C0"  padding="1pt 0"> <!--background-color="#E0E0FF" -->                         
+                                <fo:block text-align="center" >                                
+                                    <!-- fo:leader leader-pattern="use-content" font="14pt ZapfDingbats" color="white">&#10033;</fo:leader -->  
+                                    <fo:inline font="12pt ZapfDingbats" color="black">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="black">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="black">&#10033;</fo:inline>                                
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>                               
+                                </fo:block>                             
+                            </fo:block>                        
+                        </fo:list-item-label>                    
+                        
+                        <fo:list-item-body start-indent="2.12in">                        
+                            <fo:block border="thin solid #C00000" background-color="#C00000" padding="3pt 0">  <!--background-color="#FFE0E0"-->                            
+                                <fo:block color="white" text-align="left" margin-left="2mm" font-family="Helvetica" font-weight="bold">MySQL - Hibernate / JPA / JPQL</fo:block>                            
+                            </fo:block> 
+                        </fo:list-item-body>                    
+                    </fo:list-item>
+                </fo:list-block>
+                
+                <fo:list-block space-before="2pt" space-after="2pt" space-after.optimum="1pt" font="10pt Courier" text-align="center">
+                    <fo:list-item>                    
+                        <fo:list-item-label end-indent="3.0in">                        
+                            <fo:block border="thin solid #0000C0" background-color="#0000C0"  padding="1pt 0"> <!--background-color="#E0E0FF" -->                         
+                                <fo:block text-align="center" >                                
+                                    <!-- fo:leader leader-pattern="use-content" font="14pt ZapfDingbats" color="white">&#10033;</fo:leader -->  
+                                    <fo:inline font="12pt ZapfDingbats" color="black">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="black">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="black">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="black">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>                               
+                                </fo:block>                             
+                            </fo:block>                        
+                        </fo:list-item-label>                    
+                        
+                        <fo:list-item-body start-indent="2.12in">                        
+                            <fo:block border="thin solid #C00000" background-color="#C00000" padding="3pt 0">  <!--background-color="#FFE0E0"-->                            
+                                <fo:block color="white" text-align="left" margin-left="2mm" font-family="Helvetica" font-weight="bold">HTML - XHTML / CSS</fo:block>                            
+                            </fo:block> 
+                        </fo:list-item-body>                    
+                    </fo:list-item>
+                </fo:list-block>
+                
+                <fo:list-block space-before="2pt" space-after="2pt" space-after.optimum="1pt" font="10pt Courier" text-align="center">
+                    <fo:list-item>                    
+                        <fo:list-item-label end-indent="3.0in">                        
+                            <fo:block border="thin solid #0000C0" background-color="#0000C0"  padding="1pt 0"> <!--background-color="#E0E0FF" -->                         
+                                <fo:block text-align="center" >                                
+                                    <fo:inline font="12pt ZapfDingbats" color="black">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="black">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>
+                                    <fo:inline font="12pt ZapfDingbats" color="white">&#10033;</fo:inline>                               
+                                </fo:block>                             
+                            </fo:block>                        
+                        </fo:list-item-label>                    
+                        
+                        <fo:list-item-body start-indent="2.12in">                        
+                            <fo:block border="thin solid #C00000" background-color="#C00000" padding="3pt 0">  <!--background-color="#FFE0E0"-->                            
+                                <fo:block color="white" text-align="left" margin-left="2mm" font-family="Helvetica" font-weight="bold">Angular - Typescript</fo:block>                            
+                            </fo:block> 
+                        </fo:list-item-body>                    
+                    </fo:list-item>
+                </fo:list-block>
+            
+            </fo:block> 
+            
+           
+        </fo:flow>
+        
+        
+    </fo:page-sequence>
+    
+</fo:root>
